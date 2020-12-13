@@ -1,0 +1,35 @@
+@import "src/renderer/config";
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  display: inline-block;
+  overflow: auto;
+
+  .dir-table__td {
+    color: $text-color;
+    border-top: 1px solid $primary-color;
+    padding: 10px 0;
+
+    &-actions {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px 0;
+
+      & > div {
+        display: grid;
+        gap: 2px;
+      }
+      
+      & > span {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .dir-table__tr:hover {
+    background: $primary-color;
+  }
+}
